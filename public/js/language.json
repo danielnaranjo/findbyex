@@ -1,0 +1,27 @@
+{
+  "config": {
+    "default": "en"
+  },
+  "language": {
+    "en": {
+      "#menu-post":"Post a Add",
+      "#menu-explorer":"Explorer",
+      "#menu-profile":"Profile",
+      "#menu-about":"About",
+      "#menu-faq":"FAQ",
+      "#menu-privacy":"Privacy",
+      "#menu-contact":"Contact",
+      "#menu-language":"Languages"
+    },
+    "sp": {
+      "#menu-post":"Publicar un anuncio",
+      "#menu-explorer":"Explorar",
+      "#menu-profile":"Perfil",
+      "#menu-about":"Quienes Somos",
+      "#menu-faq":"Preguntas frecuentes",
+      "#menu-privacy":"Privacidad",
+      "#menu-contact":"Contactenos",
+      "#menu-language":"Idiomas"
+    }
+  }
+}

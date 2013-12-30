@@ -1,0 +1,41 @@
+extends layout
+
+block content
+	section#seconds
+		h1 Welcome back, {Daniel} 
+			a(href="/logout") Logout
+			
+		div#div1
+			h3 Posts listing
+			ul
+				li
+					a(href="#") {Titulo Uno}
+				li
+					a(href="#") {Titulo Dos}
+				li
+					a(href="#") {Titulo Tres}
+
+		div#div2
+			h3 Stats
+			ul 
+				li Calls {1234}
+				li E-mail {1234}
+				li Shares on Facebook {1234}
+				li Shares on Twitter {1234}
+		div#div3
+			h3 Update profile
+			form(action="/", name="update", method="post")
+				label Username
+				input(type='text', value='Username', autofocus='autofocus', name="username")
+				label Password
+				input(type='password', value='Password', name="password", id="pwd")
+				p.
+				label First name
+				input(type='text', autofocus='autofocus', name="firstname")
+				label Last name
+				input(type='text', autofocus='autofocus', name="lastname")
+				label E-mail
+				input(type='text', value='@', autofocus='autofocus', name="useremail")
+				label City (Optional)
+				input(type='text', autofocus='autofocus', name="city")
+				button(type='submit') Update

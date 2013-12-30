@@ -1,0 +1,107 @@
+extends layout
+
+block content
+    section#perfil
+        #cuatro
+          #anuncio
+            img(src=Logo, alt='Post by ' + Publicado)
+          #descripcion
+            p= Titulo
+            p Reference: 
+              a(href='/show/'+ Id)= Id
+          #discuss
+            script
+              var disqus_shortname = 'findby';
+              var disqus_url = window.location.href; console.log(disqus_url);
+              (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+          
+          #publicidadmovil
+            script
+              google_ad_client = "ca-pub-3074485176185204";
+              /* findbyco-320x50-text-230912 */ 
+              google_ad_slot = "3014242015"; 
+              google_ad_width = 320; 
+              google_ad_height = 50;
+            script(src='http://pagead2.googlesyndication.com/pagead/show_ads.js')
+            // Google AdSense
+
+        #cinco
+          #contactar
+            .gris Make a question
+            .glyph
+              a(href='tel:'+ Telefono)
+                .fs1(aria-hidden='true', data-icon='', title='Llamar al cliente')
+            .glyph
+              a(href='mailto:'+ Email)
+                .fs1(aria-hidden='true', data-icon='', title='Enviar preguntas')
+            .glyph
+              a(href='http://www.facebook.com/'+ Facebook, target='_blank')
+                .fs1(aria-hidden='true', data-icon='', title='Facebook')
+            .glyph
+              a(href='http://www.twitter.com/'+ Twitter, target='_blank')
+                .fs1(aria-hidden='true', data-icon='', title='Twitter')
+          #compartir
+            .gris Share
+            .addthis_toolbox.addthis_default_style.addthis_32x32_style
+              a.addthis_button_preferred_1
+              a.addthis_button_preferred_2
+              a.addthis_button_preferred_3
+              a.addthis_button_preferred_4
+              a.addthis_button_compact
+              a.addthis_counter.addthis_bubble_style
+            script
+              var addthis_config = {"data_track_addressbar":true};
+            script(src='http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fbdcf40ea81860')
+            
+          #publicidad
+            p Ads
+            script
+              google_ad_client = "ca-pub-3074485176185204";
+              google_ad_slot = "5370019667"; 
+              google_ad_width = 250; 
+              google_ad_height = 250; 
+            script(src='http://pagead2.googlesyndication.com/pagead/show_ads.js')
+            // Google AdSense
+
+      section.vermas
+        div
+          | More posts from 
+          a.azul(href='/relate/'+Publicado)= Publicado
+
+      section.js-masonry
+        #contenido Loading content, please hold on..
+
+      section.similar
+        div
+          | Posts nearby of 
+          a.azul(href='/search/'+Geo)= Publicado
+
+      section.js-masonry
+        #contenido2
+
+      section.vermas
+        #publicidadmovil
+          script
+            google_ad_client = "ca-pub-3074485176185204";
+            google_ad_slot = "3014242015"; 
+            google_ad_width = 320; 
+            google_ad_height = 50; 
+          script(src='http://pagead2.googlesyndication.com/pagead/show_ads.js')
+        // Google AdSense
+        script
+          var disqus_shortname = 'findby'; // required: replace example with your forum shortname
+          (function () {
+          var s = document.createElement('script'); s.async = true;
+          s.type = 'text/javascript';
+          s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+          (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+          }());
+        script
+          $('#phone').on('click', function() { 
+            //$('#phone').append('<a href=:'+Telefono+'>'+Telefono+'</a>');
+            console.debug(this);
+          });

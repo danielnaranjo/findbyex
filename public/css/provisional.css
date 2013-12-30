@@ -1,0 +1,245 @@
+body {
+  background-color: #3caee1;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+img {
+  border: 0;
+}
+#wrap {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+header {
+  height: 100px;
+  margin: 0 0 5px 0;
+  width: 100%;
+}
+header div {
+  display: inline-block;
+  vertical-align: top;
+}
+header #logo {
+  background-image: url("../img/logo.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 166px 73px;
+  font-size: 0.8em;
+  height: 73px;
+  margin: 18px 0 0 30px;
+  padding: 60px 0 0 100px;
+  width: 166px;
+}
+
+footer {
+  display: none;
+  font-size: 0.8em;
+  height: auto;
+  margin: 10px 0 0 0;
+  text-align: right;
+  width: 100%;
+}
+footer div {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: top;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+/* Principal con contenido */
+#principal {
+  height: auto;
+  margin: 0 auto;
+  padding: 5px 0 0 20px;
+  width: auto;
+  display: none;
+}
+#principal div {
+  display: inline-block;
+  height: auto;
+  margin: 0 5px 5px 0;
+  vertical-align: top;
+  width: auto;
+}
+
+section {
+  display: inline-block;
+  height: auto;
+  margin: 20px 0;
+  padding: 0;
+  vertical-align: top;
+  width: 100%;
+}
+
+#lanzamiento {
+  display: inline-block;
+  height: auto;
+  margin: 0 0 0 30px;
+  vertical-align: top;
+  width: 45%;
+}
+@media screen and (max-width: 480px) {
+  #lanzamiento { margin: margin: 0 0 0 25px; width: auto; }
+}
+#tags div {
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 2em;
+  display: inline-block;
+  margin: 2px;
+  padding: 5px 7px;
+  vertical-align: top;
+}
+
+#tags div:hover {
+  box-shadow: 5px 5px 5px #349dce;
+} 
+#a {background-color: #0fc149;}
+#b {background-color: #a92a25;}
+#c {background-color: #fdb972;}
+#d {background-color: #81f2fd;}
+#e {background-color: #e1fda1;}
+#f {background-color: #90b0fd;}
+#g {background-color: #8cfd62;}
+#h {background-color: #7b71fd;}
+#i {background-color: #cac6d8;}
+
+#a, #b, #c, #d, #e, #f, #g, #h, #i {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0.2s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 0.2s;
+  -moz-animation-timing-function: ease;
+  -moz-animation-fill-mode: both;
+  -ms-animation-duration: 1s;
+  -ms-animation-delay: 0.2s;
+  -ms-animation-timing-function: ease;
+  -ms-animation-fill-mode: both;
+  -o-animation-duration: 1s;
+  -o-animation-delay: 0.2s;
+  -o-animation-timing-function: ease;
+  -o-animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+#initial {
+  border-radius: 3px;
+  margin: 2px;
+  padding: 5px 7px;
+  font-size: 24px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#como {
+  display: inline-block;
+  height: auto;
+  margin: 0;
+  vertical-align: top;
+  width: 50%;
+}
+
+#como a {
+  color: #FFF;
+}
+
+@media screen and (max-width: 480px) {
+ #como {
+  margin: 10px 5px 0 20px;
+  padding: 10px;
+  width: 90%; 
+  }  
+}
+
+/* Mail Chimp */
+#mc_embed_signup{
+  clear:left; 
+  font:14px; 
+}
+#mailchimp {
+  margin: 0 0 0 -10px;
+  padding: 0;
+}
+@media screen and (max-width: 480px) { 
+  #mailchimp { display: none; }
+}
+
+
+#mailchimp p {
+  font-size: .8em;
+  margin: 0 0 0 18px
+}
+
+#como h1 {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+#como ul {
+  margin: 0 auto;
+  padding: 0;
+}
+#como li {
+  font-size: 1.1em;
+  margin: 0 0 10px 20px;
+}
+
+* Iconos de fonts */
+.fs1 {
+  font-size: 2.5em;
+}
+.glyph {
+  color: #FFF;
+  cursor: pointer;
+  font-size: 2.5em;
+  float: left;
+  text-align: center;
+  padding: 10px;
+  width: auto;
+}
+.glyph:hover {
+  color: #f5f5f5;
+  padding: 12px;
+}
+
+#partner {
+	position:fixed;
+	right:5px;
+	bottom:5px;
+}
+
+@media screen and (max-width: 480px) {
+  #partner { display: none; }
+}
+
+#lang {
+  color: #FFF;
+  padding: 10px;
+  position: fixed;
+  right: 20px;
+  top: 5px;
+  width: auto;
+}
+#lang a {
+  color: #FFF;
+  text-decoration: none;
+}

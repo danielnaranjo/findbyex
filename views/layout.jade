@@ -1,0 +1,115 @@
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+		title= title
+		meta(name='description', content='Our values: Easy to use, Easy to publish, Easy to buy. Verified user (Your security is our priority), Geolocation ads (No more typing where you are), Categories? No way! Your search is our categories!, Share, Call, Comments and all you need before your transation (More Social connections)')
+		meta(name='author', content='Daniel Naranjo')
+		link(rel='icon', href='/img/favicon.ico')
+		link(rel='stylesheet', href='/css/normalize.css')
+		link(rel='stylesheet', href='/css/estilos.css')
+		link(rel='stylesheet', href='/css/animate-custom.css')
+		link(rel='stylesheet', href='/css/style.css')
+		link(rel='stylesheet', href='http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.1.1/jquery.qtip.min.css')
+		link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
+		link(rel='stylesheet', href='/css/social-buttons.css')
+		script(src='/js/ga.js')
+
+	body
+		#wrap
+			header
+				#logo 
+					| beta*
+				// logo
+				// dime donde estoy
+				#busqueda
+					span.icon-search(aria-hidden='true', title='Search')
+				// busqueda
+				#ubicacion
+					span.icon-location(aria-hidden='true', title='Nearby')
+				// ubicacion
+				#elmenu
+					span.icon-profile(aria-hidden='true', title='Menu')
+				// menu
+				#dondeestoy
+				// Notificacion
+				#quiensoy
+					if (!user)
+						span.icon-user(aria-hidden='true', title='User')
+					else
+						a(href="/logout")
+						=user.displayName
+						img(src=user.photos[0].value, height=20, align="left", hspace=5) 
+				// Usuario
+			// header
+
+			#buscador
+				#lacaja
+					form(action='/')
+						div
+							input#w(type='type')
+							p Start your search here
+				#tags
+					ul
+						li.tag1
+							a(href='#') Lorem ipsum
+						li.tag2
+							a(href='#') Dolor sit amet
+						li.tag3
+							a(href='#') Consectetur adipiscing elit
+						li.tag2
+							a(href='#') Proin 
+						li.tag4
+							a(href='#') Proin 
+						li.tag1
+							a(href='#') Lorem ipsum
+						li.tag2
+							a(href='#') Dolor sit amet
+						li.tag3
+							a(href='#') Consectetur adipiscing elit
+						li.tag2
+							a(href='#') Proin 
+						li.tag4
+							a(href='#') Proin 
+			// buscador
+			
+			block content
+
+			footer
+				div
+					| 2013 &copy  
+					a(href='http://www.danielnaranjo.info') Daniel Naranjo
+				#gratis
+					| We got  
+					span.timer  
+					| free post..
+			// footer
+		
+		// wrap
+
+		#opciones
+			ul
+				li
+					a(href='/add') Add a new post
+				li
+					a(href='/explorer') Explorer
+				li
+					a(href='/login') Profile
+				li
+					a(href='#') About
+				li
+					a(href='#') F.A.Q.
+				li
+					a(href='#') Privacy
+				li
+					a(href='/contact') Contact
+		//menu
+
+		script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+		script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js')
+		script(src='http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.1.1/jquery.qtip.min.js')
+		script(src='/js/masonry.pkgd.min.js')
+		script(src='/js/tag-it.min.js') 
+		script(src='/js/app.js')
+		script(src='/js/tags.js')
+

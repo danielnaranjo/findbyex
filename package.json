@@ -1,0 +1,36 @@
+{
+  "name": "FindBY",
+  "description": "Initial tests",
+  "version": "0.0.2",
+  "author": {
+    "name": "Daniel Narano",
+    "email": "d@findby.co"
+  },
+  "scripts": {
+    "start": "node app"
+  },  
+  "dependencies": {
+    "express": "latest",
+    "jade": "*",
+    "stylus": "*",
+    "mongoose" : "*",
+    "express-mongoose" : "*",
+    "connect-mongo": "*",
+    "newrelic" : "*",
+    "node-uuid" : "*",
+    "monk" : "*",
+    "connect" : "*",
+    "passport": "*",
+    "passport-twitter": "*",
+    "passport-facebook": "*",
+    "socket.io": "0.9.13",
+    "cookie": "0.0.5",
+    "datejs": "0.0.2",
+    "request": "*",
+    "node-static": "*"
+  },
+  "repository": {
+  "type": "git",
+  "url": "git://github.com/danielnaranjo/Proyecto"
+  }
+}

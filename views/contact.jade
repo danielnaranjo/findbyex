@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	section#newone
+		div#loginL
+			h3 Location
+			iframe(src="http://mapsengine.google.com/map/embed?mid=z-BEFzFo7gdM.kYdiUKVQpQQI", width="100%", height="500px", frameborder="0")
+
+		div#loginR
+			form(action='#',method="post",name="contact",id="contact")
+				h3 Any idea? Feedback? Partnership? or want to say "Hello"
+				label Name
+				input.form-control(type='text', autofocus='autofocus', id="yourname")
+				label Subject
+				input.form-control(type='text', autofocus='autofocus', id="thesubject")
+				label Comments
+				textarea#yourcomments
+				button Send

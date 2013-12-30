@@ -1,0 +1,42 @@
+extends layout
+
+block content
+	section#newone
+		form(action='#')
+		div#loginL
+			h3 Post a product, service, others
+			label Brief title (Be creative but stay focus on your post)
+			input(type='text', autofocus='autofocus')
+			label Description, sumary, contact details
+			textarea#description
+			div#categories 
+				ul
+					li office 
+					li new york 
+					li friendly env
+
+		div#loginR
+			h3 Photo and other information
+			label Photo (Premium features cost $1 each one)
+			input(type='file')
+			div#drag Or drag and drop the file here
+			if (!user)
+				p 1-Click for Log in
+				a(href="/auth/facebook/")
+					button.btn.btn-facebook
+						i.fa.fa-facebook  | Sign in with Facebook
+				a(href="/auth/twitter/")
+					button.btn.btn-twitter 
+						i.fa.fa-twitter  | Sign in with Twitter
+			else 
+				| Are you
+				a(href="/logout")
+				=user.displayName + "?"
+				img(src=user.photos[0].value, height=20, align="left", hspace=5) 
+	//post a add
+
+
+	//script(src='http://tinymce.cachefly.net/4.0/tinymce.min.js')
+	//script.
+		tinymce.init({ selector:"textarea#description", theme: "modern" });
+

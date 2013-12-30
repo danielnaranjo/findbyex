@@ -1,0 +1,45 @@
+extends layout
+
+block content
+
+	section.js-masonry
+		#contenido
+			ul
+				li.box(style='text-align:center')
+					script.
+						google_ad_client = "ca-pub-3074485176185204";
+						google_ad_slot = "5370019667";
+						google_ad_width = 250; 
+						google_ad_height = 250;
+					script(src='http://pagead2.googlesyndication.com/pagead/show_ads.js')
+					// Google AdSense
+
+				//each postcollection, i in index
+					li.box
+						a(href="/view/" + postcollection._id)
+							img(src=postcollection.logo[0])
+						a(href="/view/" + postcollection._id) 	
+							h3= postcollection.title
+						p= postcollection.publisher + " | " + postcollection.date
+
+				li.box
+					a(href="/view/1")
+						img(src='http://placeimg.com/300/300/tech',alt='')
+					p.
+						Your bones don't break, mine do. That's clear. 
+						Your cells react to bacteria and viruses differently than mine. 
+						You don't get sick, I do. That's also clear. 
+						But for some reason, you and I react the exact same way to water. 
+						We swallow it too fast, we choke. We get some in our lungs, we drown. 
+						However unreal it may seem, we are connected, you and I. 
+						We're on the same curve, just on opposite ends.
+
+				li.box(style='text-align:center')
+					script.
+						google_ad_client = "ca-pub-3074485176185204";
+						google_ad_slot = "5370019667"; 
+						google_ad_width = 250; 
+						google_ad_height = 250; 
+					script(src='http://pagead2.googlesyndication.com/pagead/show_ads.js')
+					// Google AdSense
+	// principal

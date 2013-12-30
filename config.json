@@ -1,0 +1,35 @@
+{
+    "port": 5000,
+    "host": "localhost",
+    "dbname": {
+        "name": "findbyco:DN14093487v@ds053168.mongolab.com:53168/post"
+    },
+    "twitter": {
+        "consumerKey": "hLmDQvpNSa8rLbA5U6Yu5w",
+        "consumerSecret": "XFEs8x63aiUspPUFMmNSo3UvDiUmIvvQFpJrC0pk"
+    },
+    "facebook": {
+        "appId": "247543175408043",
+        "appSecret": "3639031102ebb6a99db9275e1bd8a420"
+    },
+    "mandrillapp": {
+        "appId": "",
+        "appSecret": ""
+    },
+    "newrelic":{
+        "appname" : "['findBY']",
+        "license" : "1c25f8592a7f23d1d4292cc702e56fb4a6ef4ea8"
+    },
+    "session": {
+        "secret": "123",
+        "key": "123"
+    }, 
+    "cookie": {
+        "secret": ""
+    },
+    "secure": false,
+    "loginsecure": false,
+    "key": "",
+    "cert": "",
+    "sentry": "dsn"
+}
